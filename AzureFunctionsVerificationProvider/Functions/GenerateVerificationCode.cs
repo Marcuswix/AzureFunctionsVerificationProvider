@@ -10,10 +10,10 @@ namespace AzureFunctionsVerificationProvider.Functions
     {
         private readonly ILogger<GenerateVerificationCode> _logger;
         private readonly IServiceProvider _serviceProvider;
-        private readonly VerificationProvider _verificationProvider;
+        private readonly IVerificationProvider _verificationProvider;
 
 
-        public GenerateVerificationCode(ILogger<GenerateVerificationCode> logger, IServiceProvider serviceProvider, VerificationProvider verificationProvider)
+        public GenerateVerificationCode(ILogger<GenerateVerificationCode> logger, IServiceProvider serviceProvider, IVerificationProvider verificationProvider)
         {
             _logger = logger;
             _serviceProvider = serviceProvider;
