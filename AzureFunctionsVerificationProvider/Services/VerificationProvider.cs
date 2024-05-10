@@ -134,11 +134,3 @@ namespace AzureFunctionsVerificationProvider.Services
     }
 }
 
-//try
-//{
-
-//}
-//catch (Exception ex)
-//{
-//    _logger.LogError($"GenerateVerificationCode.Run() :: {ex.Message}");
-//}
