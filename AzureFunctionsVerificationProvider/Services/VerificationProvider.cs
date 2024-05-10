@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsVerificationProvider.Services
 {
-    public class VerificationProvider
+    public class VerificationProvider : IVerificationProvider
     {
         private readonly ILogger<VerificationProvider> _logger;
         private readonly IServiceProvider _serviceProvider;
@@ -133,3 +133,4 @@ namespace AzureFunctionsVerificationProvider.Services
         }
     }
 }
+
